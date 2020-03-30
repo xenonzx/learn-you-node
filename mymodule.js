@@ -3,7 +3,7 @@ var separator ='.';
 module.exports = function(path, fileExtension, callbackk){
     var result = [];
     var err =  null;
-    fs.readdir(path,function callback(err, files){
+    fs.readdir(path,function (err, files){
         if (err){
             return callbackk(err,null);
         }
